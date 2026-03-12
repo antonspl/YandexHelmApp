@@ -38,7 +38,7 @@ public class OrderController {
     }
 
     @GetMapping("/customer/{customerId}")
-    public List<Order> getOrdersByCustomerId(@PathVariable Long customerIIIIIIId) {
-        return orderRepository.findByCustomerId(customerIIIIIIId);
+    public List<Order> getOrdersByCustomerId(@PathVariable Long customerId) {
+        return orderRepository.findByCustomerId(customerId);
     }
 } 
